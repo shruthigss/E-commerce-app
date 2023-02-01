@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    background-color: rgb(228, 224, 224);
+    padding: 10px;
+    /* margin: 100px auto; */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap:20px;
+    grid-row-gap:20px ;
+}
+.card{
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 4px;
+    margin: 0px 10px;
+    transition: 1s;
+    background-color: grey;
+}
+.card:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px;
+}
+.card .description .price{
+    text-align: left;
+    margin-top: 20px;
+}
+.card .description .stock{
+    text-align: right;
+    margin-top: -20px;
+}
+.card .description .brand{
+    text-align: center;
+}
+.card .img-container img{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: purple;
+}
+
+.description-container{
+    font-size: 15px;
+    color: black;
+}
